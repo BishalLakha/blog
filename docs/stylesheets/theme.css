@@ -1,6 +1,6 @@
-/* -----------------------
-   LIGHT THEME OVERRIDES
-   ----------------------- */
+/* ---------------------------------------
+   LIGHT THEME: White header, footer, etc.
+   --------------------------------------- */
    [data-md-color-scheme="default"] .md-header,
    [data-md-color-scheme="default"] .md-header__inner,
    [data-md-color-scheme="default"] .md-footer,
@@ -11,14 +11,16 @@
      color: #000000 !important;
    }
    
-   /* Make sure the search icon is visible in light mode */
+   /* Ensure header icons (toggle/search) are visible in light mode */
+   [data-md-color-scheme="default"] .md-header__button,
+   [data-md-color-scheme="default"] .md-header__button .md-icon,
    [data-md-color-scheme="default"] .md-search__icon {
      color: #000000 !important;
    }
    
-   /* -----------------------
-      DARK THEME OVERRIDES
-      ----------------------- */
+   /* --------------------------------------
+      DARK THEME: Black header, footer, etc.
+      -------------------------------------- */
    [data-md-color-scheme="slate"] .md-header,
    [data-md-color-scheme="slate"] .md-header__inner,
    [data-md-color-scheme="slate"] .md-footer,
@@ -29,7 +31,9 @@
      color: #ffffff !important;
    }
    
-   /* Make sure the search icon and text are visible in dark mode */
+   /* Ensure header icons (toggle/search) are visible in dark mode */
+   [data-md-color-scheme="slate"] .md-header__button,
+   [data-md-color-scheme="slate"] .md-header__button .md-icon,
    [data-md-color-scheme="slate"] .md-search__icon {
      color: #ffffff !important;
    }
