@@ -1,17 +1,36 @@
-/* --- Light theme overrides --- */
-[data-md-color-scheme="default"] .md-header,
-[data-md-color-scheme="default"] .md-header__inner,
-[data-md-color-scheme="default"] .md-footer,
-[data-md-color-scheme="default"] .md-footer__inner {
-  background-color: #ffffff !important;
-  color: #000000 !important;
-}
-
-/* --- Dark theme overrides --- */
-[data-md-color-scheme="slate"] .md-header,
-[data-md-color-scheme="slate"] .md-header__inner,
-[data-md-color-scheme="slate"] .md-footer,
-[data-md-color-scheme="slate"] .md-footer__inner {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-}
+/* -----------------------
+   LIGHT THEME OVERRIDES
+   ----------------------- */
+   [data-md-color-scheme="default"] .md-header,
+   [data-md-color-scheme="default"] .md-header__inner,
+   [data-md-color-scheme="default"] .md-footer,
+   [data-md-color-scheme="default"] .md-footer__inner,
+   [data-md-color-scheme="default"] .md-search__form,
+   [data-md-color-scheme="default"] .md-search__input {
+     background-color: #ffffff !important;
+     color: #000000 !important;
+   }
+   
+   /* Make sure the search icon is visible in light mode */
+   [data-md-color-scheme="default"] .md-search__icon {
+     color: #000000 !important;
+   }
+   
+   /* -----------------------
+      DARK THEME OVERRIDES
+      ----------------------- */
+   [data-md-color-scheme="slate"] .md-header,
+   [data-md-color-scheme="slate"] .md-header__inner,
+   [data-md-color-scheme="slate"] .md-footer,
+   [data-md-color-scheme="slate"] .md-footer__inner,
+   [data-md-color-scheme="slate"] .md-search__form,
+   [data-md-color-scheme="slate"] .md-search__input {
+     background-color: #000000 !important;
+     color: #ffffff !important;
+   }
+   
+   /* Make sure the search icon and text are visible in dark mode */
+   [data-md-color-scheme="slate"] .md-search__icon {
+     color: #ffffff !important;
+   }
+   

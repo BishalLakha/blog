@@ -1,5 +1,5 @@
 site_name: Stochastic Tangents
-site_url: "https://lakhabishal.com" 
+site_url: "lakhabishal.com" 
 
 theme:
     name: 'material'
@@ -7,23 +7,33 @@ theme:
       logo: material/home 
     palette:
 
-    # Light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: black 
-      accent: blue
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
+    # # Light mode
+    # - media: "(prefers-color-scheme: light)"
+    #   scheme: default
+    #   primary: black 
+    #   accent: blue
+    #   toggle:
+    #     icon: material/toggle-switch-off-outline
+    #     name: Switch to dark mode
 
-    # Dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: white
-      accent: blue
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
+    # # Dark mode
+    # - media: "(prefers-color-scheme: dark)"
+    #   scheme: slate
+    #   primary: white
+    #   accent: blue
+    #   toggle:
+    #     icon: material/toggle-switch
+    #     name: Switch to light mode
+
+      - media: "(prefers-color-scheme: light)"
+        scheme: default
+        primary: black
+        accent: blue
+      - media: "(prefers-color-scheme: dark)"
+        scheme: slate
+        primary: white
+        accent: blue
+
 
 # Extensions
 markdown_extensions:
