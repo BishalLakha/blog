@@ -1,4 +1,4 @@
-site_name: Stochastic Tangents
+# site_name: Stochastic Tangents
 
 theme:
     name: 'material'
@@ -7,7 +7,7 @@ theme:
     
     features:
       - content.footnote.tooltips
-      
+
     palette:
 
     # # Light mode
