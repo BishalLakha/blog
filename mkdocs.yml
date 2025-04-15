@@ -1,5 +1,4 @@
 site_name: Stochastic Tangents
-site_url: "https://lakhabishal.com/" 
 
 theme:
     name: 'material'
@@ -40,6 +39,9 @@ theme:
           icon: material/toggle-switch
           name: Switch to dark mode
 
+
+extra:
+  homepage: https://lakhabishal.com/
 
 # Extensions
 markdown_extensions:
