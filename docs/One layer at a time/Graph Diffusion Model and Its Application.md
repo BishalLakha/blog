@@ -1,6 +1,6 @@
 
 ## 1 Introduction
-The phenomenal performance of AI systems for image and video generation such as DALLE [^1], Stable Diffusion [^2], and Sora [^3] has captured the imagination of people and triggered the interest of many [^4], [^5],[^6] . Underlying these AI systems is a deep learning algorithm called diffusion models or denoising diffusion probabilistic models (DDPM). The diffusion model, first proposed by Sohl-Dickstein et al. [^7], and later improved by Ho et al. [^8], enabling practical use cases, is a physics-inspired generative model. In physics, diffusion refers to the process by which particles move from regions of higher concentration to regions of lower concentration to reach an equilibrium, mathematically captured by Fick’s laws [^9]. These laws describe the rate of diffusion by taking into account the concentration gradient between two points [^10]. High-dimensional data also behaves similarly to the randomly moving particles as they seek an optimal distribution or representation, making diffusion suitable for generative tasks [^10].
+The phenomenal performance of AI systems for image and video generation such as DALLE [^1], Stable Diffusion [^2], and Sora [^3] has captured the imagination of people and triggered the interest of many [^4] [^5] [^6] . Underlying these AI systems is a deep learning algorithm called diffusion models or denoising diffusion probabilistic models (DDPM). The diffusion model, first proposed by Sohl-Dickstein et al. [^7], and later improved by Ho et al. [^8], enabling practical use cases, is a physics-inspired generative model. In physics, diffusion refers to the process by which particles move from regions of higher concentration to regions of lower concentration to reach an equilibrium, mathematically captured by Fick’s laws [^9]. These laws describe the rate of diffusion by taking into account the concentration gradient between two points [^10]. High-dimensional data also behaves similarly to the randomly moving particles as they seek an optimal distribution or representation, making diffusion suitable for generative tasks [^10] .
 
 The diffusion model involves two main processes: the forward process (diffusion) and the reverse process (denoising), as illustrated in Fig. 1. The forward process requires gradually degrading the data, such as an image, through a multi-step noise application that converts it into a sample from a Gaussian distribution, discussed in detail in Section 1.1. Conversely, the reverse process, detailed in Section 1.2, involves training a deep neural network to reverse the noising steps, enabling the generation of new data from Gaussian-distributed samples [^11]. Unlike other generative models like Generative Adversarial Networks (GAN) [^12], diffusion models are easy to train and can scale well on parallel hardware, making them quite suitable for large-scale datasets [^11]. They also avoid the problem of instability during training and generate better results in comparison to those algorithms, leading to their increased adoption in research and applications [^13].
 
@@ -143,9 +143,9 @@ $$
 
 ### 2.3 Latent Diffusion
 
-Diffusion over discrete graph space can suffer from different issues, primarily high modeling complexity, complex relational information leading to limited semantic learning, and consequently poor performance [^21]. Instead, using a latent space can improve efficiency with faster sampling and produce better samples by producing smoother representation [^21],[^22], [^23]. 
+Diffusion over discrete graph space can suffer from different issues, primarily high modeling complexity, complex relational information leading to limited semantic learning, and consequently poor performance [^21]. Instead, using a latent space can improve efficiency with faster sampling and produce better samples by producing smoother representation [^21] [^22] [^23]. 
 
-This is generally achieved by first training a variational graph autoencoder (VGAE) to capture topological information and then applying diffusion with some conditioning on its latent space to enhance the representation, and finally using the decoder to generate the graph [^21], [^22],[^23], [^24].
+This is generally achieved by first training a variational graph autoencoder (VGAE) to capture topological information and then applying diffusion with some conditioning on its latent space to enhance the representation, and finally using the decoder to generate the graph [^21] [^22] [^23]  [^24].
 
 ---
 ## 3 Applications
@@ -191,13 +191,14 @@ Machine learning models are generally "black box" in nature, making them untrust
 [^8]:
     Jonathan Ho, Ajay Jain, and Pieter Abbeel. Denoising diffusion probabilistic models. In *Advances in Neural Information Processing Systems*, volume 33, page 6840–6851. Curran Associates, Inc., 2020.
 
-[^9]: Fick’s laws of diffusion, July 2024. Page Version ID: 1235588853.
+[^9]:
+    Fick’s laws of diffusion, July 2024. Page Version ID: 1235588853.
 
-[10]: Diffusion models.
+[10]: 
+    Diffusion models.
 
 [^11]:
-    Christopher M. Bishop and Hugh Bishop. *Deep Learning: Foundations and Concepts*. 
-Springer International Publishing, Cham, 2024.
+    Christopher M. Bishop and Hugh Bishop. *Deep Learning: Foundations and Concepts*. Springer International Publishing, Cham, 2024.
 
 [^12]:
     Ian J. Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. Generative adversarial networks, 2014.
