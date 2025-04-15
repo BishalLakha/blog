@@ -1,5 +1,5 @@
 
 
-![[image-1.png]]
+![[blog/docs/2025-04/image.png]]
 
 
