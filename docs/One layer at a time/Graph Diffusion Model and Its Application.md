@@ -38,9 +38,11 @@ $$
    - Pick a random time step $t \sim \text{Uniform}[1, T]$.
    - Draw a sample $x_t \sim \mathcal{N}(x_t|\sqrt{\alpha_t}x_0, (1-\alpha_t)I)$, i.e.,
      
+     
      $$
      x_t = \alpha_t x_0 + \sqrt{1-\alpha_t}z, \, z \sim \mathcal{N}(0, I)
      $$
+     
      
    - Take a gradient descent step on:
      $$
@@ -75,9 +77,11 @@ This process begins with the assumption that the final noisy data point, $x_T$, 
 2. **For** $t = T, T-1, \ldots, 1$ **do**:
    1. Calculate $\hat{x}_\theta(x_t)$ using our trained denoiser.
    2. Update according to:
+      
       $$
       x_{t-1} = \frac{(1-\alpha_{t-1})\sqrt{\alpha_t}}{1-\alpha_t} x_t + \frac{(1-\alpha_t)\sqrt{\alpha_{t-1}}}{1-\alpha_t} \hat{x}_\theta(x_t) + \sigma_q(t)z, \, z \sim \mathcal{N}(0, I)
       $$
+      
       
 3. **End For**
 
@@ -191,7 +195,7 @@ Machine learning models are generally "black box" in nature, making them untrust
 
 [^9]: Fick’s laws of diffusion, July 2024. Page Version ID: 1235588853.
 
-[10]: Diffusion models.
+[^10]: Diffusion models.
 
 [^11]:
     Christopher M. Bishop and Hugh Bishop. *Deep Learning: Foundations and Concepts*. Springer International Publishing, Cham, 2024.
