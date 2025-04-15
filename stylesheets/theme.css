@@ -1,0 +1,40 @@
+/* ---------------------------------------
+   LIGHT THEME: White header, footer, etc.
+   --------------------------------------- */
+   [data-md-color-scheme="default"] .md-header,
+   [data-md-color-scheme="default"] .md-header__inner,
+   [data-md-color-scheme="default"] .md-footer,
+   [data-md-color-scheme="default"] .md-footer__inner,
+   [data-md-color-scheme="default"] .md-search__form,
+   [data-md-color-scheme="default"] .md-search__input {
+     background-color: #ffffff !important;
+     color: #000000 !important;
+   }
+   
+   /* Ensure header icons (toggle/search) are visible in light mode */
+   [data-md-color-scheme="default"] .md-header__button,
+   [data-md-color-scheme="default"] .md-header__button .md-icon,
+   [data-md-color-scheme="default"] .md-search__icon {
+     color: #000000 !important;
+   }
+   
+   /* --------------------------------------
+      DARK THEME: Black header, footer, etc.
+      -------------------------------------- */
+   [data-md-color-scheme="slate"] .md-header,
+   [data-md-color-scheme="slate"] .md-header__inner,
+   [data-md-color-scheme="slate"] .md-footer,
+   [data-md-color-scheme="slate"] .md-footer__inner,
+   [data-md-color-scheme="slate"] .md-search__form,
+   [data-md-color-scheme="slate"] .md-search__input {
+     background-color: #000000 !important;
+     color: #ffffff !important;
+   }
+   
+   /* Ensure header icons (toggle/search) are visible in dark mode */
+   [data-md-color-scheme="slate"] .md-header__button,
+   [data-md-color-scheme="slate"] .md-header__button .md-icon,
+   [data-md-color-scheme="slate"] .md-search__icon {
+     color: #ffffff !important;
+   }
+   
