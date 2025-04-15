@@ -1,7 +1,10 @@
 site_name: Stochastic Tangents
+site_url: "https://lakhabishal.com" 
 
 theme:
     name: 'material'
+    icon:
+      logo: material/home 
     palette:
 
     # Light mode
@@ -73,8 +76,3 @@ extra_javascript:
 extra_css:
   - stylesheets/theme.css
 
-extra:
-  social:
-    - icon: material/home
-      link: https://lakhabishal.com/
-      name: Bishal Lakha
