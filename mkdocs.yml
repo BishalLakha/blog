@@ -25,6 +25,9 @@ theme:
 # Extensions
 markdown_extensions:
   - footnotes
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
   # - attr_list
   - pymdownx.arithmatex:
       generic: true
@@ -52,6 +55,7 @@ plugins:
   - search
   - roamlinks
   - blog
+  - glightbox
   - rss:
       match_path: blog/posts/.* 
       date_from_meta:
