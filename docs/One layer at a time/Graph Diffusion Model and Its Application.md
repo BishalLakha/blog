@@ -83,11 +83,13 @@ This process begins with the assumption that the final noisy data point, $x_T$, 
 
 The training objective for the diffusion model is to maximize the variational lower bound (ELBO) on the log-likelihood expressed as:
 
+
 $$
 \text{ELBO}_{\phi, \theta}(x) = \mathbb{E}_{q_\phi(x_{1:T}|x_0)} [\log p_\theta(x_0|x_1)] 
 - \text{D}_{\text{KL}}(q_\phi(x_T|x_0) || p(x_T)) 
 - \sum_{t=2}^T \mathbb{E}_{q_\phi(x_t|x_0)} \left[ \text{D}_{\text{KL}} \left( q_\phi(x_{t-1}|x_t, x_0) || p_\theta(x_{t-1}|x_t) \right) \right]
 $$
+
 The first component of the equation, the reconstruction term, measures how well the model $p_\theta$ can reconstruct the initial data point $x_0$ from the latent variable $x_1$, using the log-likelihood $p_\theta(x_0|x_1)$. The second component involves the KL divergence, which measures the difference between the distribution $q_\phi(x_T|x_0)$ and the prior distribution $p(x_T)$. The last component, the consistency term, sums the KL divergences across transitions for $t = 2$ to $T$, measuring the alignment between the forward transition modeled by $q_\phi(x_{t-1}|x_t, x_0)$ and the reverse transition $p_\theta(x_{t-1}|x_t)$. The ELBO can be further simplified to get a loss function (see [15]):
 
 $$
