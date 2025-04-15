@@ -1,11 +1,13 @@
+# Stochastic Tangents
 
+Hello, world! 🌎 Welcome to my little corner of the internet—expect AI, book reviews, movie chats, poetry, and everything in between! 🚀
 
 ![](./images/image.png)
 
 
 
 
-![Image title|700x394](https://www.codelikethewind.org/content/images/size/w2000/2022/05/hello_world.png)
+
 
 
 
