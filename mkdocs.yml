@@ -69,3 +69,12 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/mermaid/dist/mermaid.min.js 
+
+extra_css:
+  - stylesheets/theme.css
+
+extra:
+  social:
+    - icon: material/home
+      link: https://lakhabishal.com/
+      name: Bishal Lakha
