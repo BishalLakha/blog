@@ -76,6 +76,7 @@ This process begins with the assumption that the final noisy data point, $x_T$, 
       $$
       x_{t-1} = \frac{(1-\alpha_{t-1})\sqrt{\alpha_t}}{1-\alpha_t} x_t + \frac{(1-\alpha_t)\sqrt{\alpha_{t-1}}}{1-\alpha_t} \hat{x}_\theta(x_t) + \sigma_q(t)z, \, z \sim \mathcal{N}(0, I)
       $$
+      
 3. **End For**
 
 ---
