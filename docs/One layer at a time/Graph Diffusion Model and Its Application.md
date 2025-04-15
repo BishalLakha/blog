@@ -37,9 +37,11 @@ $$
 2. **Repeat**:
    - Pick a random time step $t \sim \text{Uniform}[1, T]$.
    - Draw a sample $x_t \sim \mathcal{N}(x_t|\sqrt{\alpha_t}x_0, (1-\alpha_t)I)$, i.e.,
+     
      $$
      x_t = \alpha_t x_0 + \sqrt{1-\alpha_t}z, \, z \sim \mathcal{N}(0, I)
      $$
+     
    - Take a gradient descent step on:
      $$
      \nabla_\phi || \hat{x}_\phi(x_t) - x_0 ||^2
@@ -173,17 +175,13 @@ Machine learning models are generally "black box" in nature, making them untrust
 [^2]:
     Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Björn Ommer. High-resolution image synthesis with latent diffusion models, 2021.
 
-[^3]:
-    Video generation models as world simulators — OpenAI.
+[^3]: Video generation models as world simulators — OpenAI.
 
-[^4]:
-    Thomas Macaulay. OpenAI’s new image generator sparks both excitement and fear, April 2022.
+[^4]: Thomas Macaulay. OpenAI’s new image generator sparks both excitement and fear, April 2022.
 
-[^5]:
-    Kevin Roose. AI-generated art is already transforming creative work. *The New York Times*, October 2022.
+[^5]: Kevin Roose. AI-generated art is already transforming creative work. *The New York Times*, October 2022.
 
-[^6]:
-    OpenAI reveals Sora, a tool to make instant videos from written prompts, February 2024.
+[^6]: OpenAI reveals Sora, a tool to make instant videos from written prompts, February 2024.
 
 [^7]:
     Jascha Sohl-Dickstein, Eric A. Weiss, Niru Maheswaranathan, and Surya Ganguli. Deep unsupervised learning using nonequilibrium thermodynamics. *(arXiv:1503.03585)*, November 2015. [arXiv:1503.03585 [cond-mat, q-bio, stat]].
@@ -191,11 +189,9 @@ Machine learning models are generally "black box" in nature, making them untrust
 [^8]:
     Jonathan Ho, Ajay Jain, and Pieter Abbeel. Denoising diffusion probabilistic models. In *Advances in Neural Information Processing Systems*, volume 33, page 6840–6851. Curran Associates, Inc., 2020.
 
-[^9]:
-    Fick’s laws of diffusion, July 2024. Page Version ID: 1235588853.
+[^9]: Fick’s laws of diffusion, July 2024. Page Version ID: 1235588853.
 
-[10]: 
-    Diffusion models.
+[10]: Diffusion models.
 
 [^11]:
     Christopher M. Bishop and Hugh Bishop. *Deep Learning: Foundations and Concepts*. Springer International Publishing, Cham, 2024.
